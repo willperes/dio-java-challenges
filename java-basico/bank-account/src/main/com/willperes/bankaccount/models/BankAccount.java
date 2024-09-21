@@ -1,10 +1,10 @@
-package main.com.willperes.bankaccount.models;
+package models;
 
 public class BankAccount {
-    private int number;
-    private String agency;
-    private String clientName;
-    private double balance;
+    private final int number;
+    private final String agency;
+    private final String clientName;
+    private final double balance;
 
     private BankAccount(int number, String agency, String clientName, double balance) {
         this.number = number;

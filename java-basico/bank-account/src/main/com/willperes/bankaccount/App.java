@@ -1,10 +1,8 @@
-package main.com.willperes.bankaccount;
+import models.BankAccount;
 
 import java.util.Scanner;
 
-import main.com.willperes.bankaccount.models.BankAccount;
-
-public class AccountTerminal {
+public class App {
     public static void main(String[] args) {
         final Scanner sc = new Scanner(System.in);
 
@@ -20,7 +18,7 @@ public class AccountTerminal {
         final String accountOwnerName = sc.next();
 
         final BankAccount bankAccount = BankAccount.create(accountNumber, accountAgencyCode, accountOwnerName);
-        System.out.println("Thank you for trusting us and creating your account!");
+        System.out.println("Thank you " + bankAccount.getClientName() + " for trusting us and creating your account!");
         System.out.println("Agency: " + bankAccount.getAgency());
         System.out.println("Number: " + bankAccount.getNumber());
         System.out.println("Balance: " + bankAccount.getBalance());
