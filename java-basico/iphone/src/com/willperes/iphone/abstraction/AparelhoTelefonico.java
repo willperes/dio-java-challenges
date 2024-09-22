@@ -5,5 +5,4 @@ public interface AparelhoTelefonico {
     void atender(String numero);
     void desligar();
     void iniciarCorreioVoz();
-
 }

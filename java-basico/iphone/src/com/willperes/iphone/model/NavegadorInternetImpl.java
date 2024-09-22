@@ -26,6 +26,12 @@ public class NavegadorInternetImpl implements NavegadorInternet {
         abas.add("");
     }
 
+    public void fecharAba(int aba) throws NavigatorTabNotFoundException {
+        validarSeAbaExiste(aba);
+
+        System.out.println("Fechando a aba: " + aba);
+    }
+
     public void atualizarPagina() {
         System.out.println("Atualizando a página");
     }

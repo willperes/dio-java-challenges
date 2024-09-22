@@ -4,7 +4,7 @@ import exceptions.InvalidCounterParametersException;
 import models.Counter;
 
 public interface App {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         final Scanner sc = new Scanner(System.in);
 
         System.out.println("\n\nWelcome to the counter!");
