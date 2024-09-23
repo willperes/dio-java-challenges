@@ -1,12 +1,7 @@
 package com.willperes.iphone.factory;
 
-import com.willperes.iphone.abstraction.AparelhoTelefonico;
-import com.willperes.iphone.abstraction.NavegadorInternet;
-import com.willperes.iphone.abstraction.ReprodutorMusical;
-import com.willperes.iphone.model.AparelhoTelefonicoImpl;
-import com.willperes.iphone.model.NavegadorInternetImpl;
-import com.willperes.iphone.model.Phone;
-import com.willperes.iphone.model.ReprodutorMusicalImpl;
+import com.willperes.iphone.abstraction.*;
+import com.willperes.iphone.model.*;
 
 public class PhoneFactory {
     public static Phone create() {
